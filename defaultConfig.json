@@ -4,11 +4,11 @@
       "type": "local",
       "portId": 0,
       "enabled": true,
-      "rs485Port": "/dev/ttyUSB0",
+      "rs485Port": "",
       "mock": false,
-      "netConnect": false,
-      "netHost": "raspberrypi",
-      "netPort": 9801,
+      "netConnect": true,
+      "netHost": "192.168.1.93",
+      "netPort": 80,
       "inactivityRetry": 10,
       "portSettings": {
         "baudRate": 9600,
@@ -26,8 +26,8 @@
       },
       "screenlogic": {
         "connectionType": "local",
-        "systemName": "Pentair: 00-00-00",
-        "password": 1234
+        "systemName": "Pentair: F9-94-D6",
+        "password": "8805053caK!"
       }
     },
     "backups": {
@@ -49,7 +49,7 @@
       "http": {
         "enabled": true,
         "ip": "0.0.0.0",
-        "port": 4200,
+        "port": 4207,
         "httpsRedirect": false,
         "authentication": "none",
         "authFile": "/users.htpasswd"
@@ -86,11 +86,11 @@
       "hubitat": {
         "name": "Hubitat",
         "type": "rest",
-        "enabled": false,
+        "enabled": true,
         "fileName": "smartThings-Hubitat.json",
         "globals": {},
         "options": {
-          "host": "0.0.0.0",
+          "host": "192.168.1.73",
           "port": 39501
         }
       },
